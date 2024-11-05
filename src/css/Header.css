@@ -1,0 +1,327 @@
+.header {
+    /* background: var(--grey-color); */
+    width: 100vw;
+    height: 4rem;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #a6a6a666;
+}
+.link-img-container{
+    width: 5rem;
+    height: 100%;
+}
+.header.active {
+    background-color: var(--grey-color);
+    transition: all 1s;
+    position: fixed;
+}
+header.active #btn .btn-content {
+    border-top: 2px solid white; /* Cambia el color a blanco cuando el header es activo */
+}
+.header.active svg{
+    stroke: var(--white-color);
+}
+.header-btns{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.img-logo {
+    width: 100%;
+    height: 100%;
+    padding-left: 1rem;
+}
+
+.img-logo img {
+    width: 100%;
+}
+
+/* estilos menu hamburguesa */
+.btn-container {
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn {
+    background: transparent;
+
+    height: 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+
+    border: none;
+    cursor: pointer;
+
+    transition: .5s;
+    padding-right: 1rem;
+}
+
+.btn-content:nth-child(1) {
+    margin: 1px;
+    height: 3px;
+    width: 30px;
+    transition: .5s;
+    border-top: 2px solid var(--secondary-color);
+    position: relative;
+}
+
+.btn-content:nth-child(2) {
+    margin: 1px;
+    height: 3px;
+    width: 30px;
+    transition: .5s;
+    border-top: 2px solid var(--secondary-color);
+}
+
+.btn-content:nth-child(3) {
+    margin: 1px;
+    height: 3px;
+    width: 30px;
+    transition: .5s;
+    border-top: 2px solid var(--secondary-color);
+    position: relative;
+}
+
+#btn.active .btn-content:nth-child(1) {
+    transform: rotate(135deg);
+    top: 3px;
+}
+
+#btn.active .btn-content:nth-child(2) {
+    border-top: transparent;
+}
+
+#btn.active .btn-content:nth-child(3) {
+    transform: rotate(-135deg);
+    top: -7px;
+}
+
+/*2*/
+#mobile-nav {
+    position: fixed;
+    top: 7vh;
+    left: 0;
+    width: 100vw;
+    max-height: 0; /* Inicialmente colapsado */
+    padding-bottom: 0;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    gap: 1rem;
+    align-content: center;
+    background-color: var(--grey-color);
+    color: var(--white-color);
+    z-index: 2;
+    overflow: hidden;
+}
+
+#mobile-nav.active {
+    transition: max-height 0.5s cubic-bezier(0.58, 0.02, 0.58, 1);
+    max-height: 100vh; 
+}
+
+
+#mobile-nav img {
+    position: fixed;
+    top: 0;
+}
+
+#mobile-nav a {
+    color: var(--white-color);
+    display: contents;
+}
+#mobile-nav a svg {
+    width: 1.5rem;
+}
+
+.userLogin{
+    width: 1.3rem;
+}
+
+#logo-container {
+    position: relative;
+}
+
+
+.cervezas-lista {
+    font-size: 12px;
+}
+
+.abrir-caja {
+    display: none;
+}
+
+.abrir-caja.active {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content: space-around;
+}
+
+.container-option {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 0.5rem;
+    background: transparent;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.svg-flechita-nav {
+    transform: rotate(-90deg);
+    float: right;
+    height: 0.75rem;
+    width: 0.75rem;
+    min-height: 0.75rem;
+    min-width: 0.75rem;
+}
+
+.svg-flechita-nav-sub {
+    transform: rotate(-90deg);
+    float: right;
+    height: 0.75rem;
+    width: 0.75rem;
+    min-height: 0.75rem;
+    min-width: 0.75rem;
+    color: var(--white-color);
+    margin-left: 1rem;
+}
+
+.svg-flechita-nav-sub.active {
+    transform: rotate(0deg);
+    float: right;
+    height: 0.75rem;
+    width: 0.75rem;
+    min-height: 0.75rem;
+    min-width: 0.75rem;
+    transition: all 0.3s;
+    margin-left: 1rem;
+}
+
+.container-mobile-nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1rem;
+    margin: 2rem 0 1rem 1rem;
+}
+
+/*termina*/
+
+.no-scroll {
+    overflow: hidden;
+}
+
+/* fin estilos menu hamburguesa */
+
+
+.cart-header-container{
+    width: 2rem;
+    position: relative;
+}
+.productsNumber{
+    height: 20px;
+    width: 20px;
+    border-radius: 999px;
+    position: absolute;
+    top: -5px;
+    right: -7px;
+    background-color: #fb3939;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+        .cls-1 {fill: #eef9fe; opacity: 0.7;}
+        .cls-2 {fill: #f6fbf8;}
+        .cls-3 {fill: #c3c2c7;}
+        .cls-4 {fill: #fccf58;}
+        .cls-5 {fill: #fafdff;}
+        .cls-6 {fill: #f59390;}
+        .cls-7 {fill: #ccdcd9;}
+        .cls-8 {fill: #7e8da0;}
+        .cls-9 {fill: #7c8ca1;}
+        .cls-10 {fill: #c6e6d7;}
+        .cls-11 {fill: #def0e7;}
+        .cls-12 {fill: #e6efed;}
+        .cls-13 {fill: #f0f5f3;}
+        .cls-14 {fill: #aac6c2;}
+        .cls-15 {fill: #c4d9d9;}
+        
+      #blink1, #blink2, #blink3 {
+      opacity: 0;
+      animation: blinkIn 0.7s linear 0.5s forwards infinite;
+      }
+      
+      #blob {
+      display:none;
+      }
+      
+      #cloudSmall, #cloudLarge {
+      animation: cloudsMove 6s ease-in-out infinite;
+      fill: #e6efed;
+      }
+      
+      #treeLarge {
+      animation: treeRightMove 3s ease-in-out infinite;
+      }
+      
+      #treeSmall {
+      animation: treeLeftMove 6s ease-in-out infinite;
+      }
+      
+      
+      /* Animations */
+      @keyframes cloudsMove {
+      0% {
+        transform: translate(75%, 0);
+      }
+      100% {
+        transform: translate(-100%,0); 
+      }
+      }
+      
+      @keyframes treeRightMove {
+      0% {
+        transform: translate(20%,0);
+      }
+      100% {
+        transform: translate(-100%,0);
+      }
+      }
+      
+      @keyframes treeLeftMove {
+      0% {
+        transform: translate(150%,0);
+      }
+      100% {
+        transform: translate(-100%,0);
+      }
+      }
+      
+      @keyframes blinkIn {
+      0% {
+        opacity: 0;
+      }
+      15% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 1;
+      }
+      }
