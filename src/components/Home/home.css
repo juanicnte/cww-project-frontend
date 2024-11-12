@@ -1,0 +1,234 @@
+/* ACTION ESLOGAN CSS */
+.container-carousel {
+    position: relative;
+}
+
+.container-link-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    line-height: 30px;
+    /* background-color: var(--grey-color); */
+    color: var(--terciary-color);
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Centramos el botón en ambos ejes */
+    text-align: center;
+}
+
+.container-link-form svg {
+    width: 4vh;
+    padding-right: 5px;
+}
+
+
+
+/* SERVICES CSS  */
+.services-article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem 1rem;
+}
+
+.services-article-svg {
+    width: 6rem;
+    border: 4px solid var(--terciary-color);
+    padding: 9px;
+    border-radius: 4rem;
+}
+
+.services-title {
+    font-size: 24px;
+    color: var(--grey-color);
+    font-weight: 300;
+    margin: 9px 0;
+}
+
+.services-description-container {
+    text-align: center;
+    font-size: 17px;
+    color: #666;
+    font-weight: 300;
+}
+
+.services-description-container a {
+    margin-right: 5px;
+    color: var(--main-color);
+}
+
+.services-description-see-more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.services-description-see-more svg {
+    width: 1rem;
+}
+
+.contact-section {
+    background-image: url(/img/soluciones-web-contact.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-article {
+    padding: 5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.contact-title {
+    font-size: 40px;
+    color: var(--grey-color);
+    font-weight: 600;
+    text-align: center;
+}
+
+.contact-description-container {
+    text-align: center;
+    font-size: 20px;
+    color: var(--grey-color);
+    font-weight: 300;
+}
+
+.contact-description-container a {
+    margin-left: 5px;
+}
+
+.contact-link-wpp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    width: 11rem;
+    margin: auto;
+    background-color: #1ad03f;
+    border-radius: 6rem;
+    color: #f4f4f4;
+}
+
+.contact-link-wpp svg {
+    width: 1.3rem;
+    margin-right: 4px;
+}
+
+/* WHY CHOOSE US */
+
+.WhyChooseUs-picture {
+    width: 100%;
+    height: 40vh;
+    display: block;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.WhyChooseUs-picture img {
+    width: 17rem;
+    height: 17rem;
+}
+
+.WhyChooseUs-title-article {
+    margin: 0 2rem 2rem;
+    color: var(--strong-pink);
+}
+
+.WhyChooseUs-title {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.WhyChooseUs-subTitle {
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.WhyChooseUs-article {
+    display: flex;
+    gap: 8vw;
+    margin: 0 2rem 4rem;
+}
+
+.WhyChooseUs-svg {
+    width: 3rem;
+    height: 3rem;
+}
+
+.WhyChooseUs-svg svg {
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    border-radius: 5rem;
+    background-color: var(--terciary-color);
+}
+
+.WhyChooseUs-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.WhyChooseUs-article-description h3 {
+    font-size: 20px;
+    color: var(--grey-color);
+    margin-top: 5px;
+}
+
+.WhyChooseUs-article-description p {
+    font-size: 16px;
+    color: #666;
+    margin-top: 6px;
+}
+
+.WhyChooseUs-article-description {
+    width: 15rem;
+}
+
+.emails-contact-startNow {
+    height: 16rem;
+    background-color: var(--terciary-color);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.emails-contact-startNow h2 {
+    font-weight: 600;
+    color: #666;
+    font-size: 26px;
+    margin: 0 1rem;
+}
+
+.emails-contact-startNow a {
+    width: 15rem;
+    height: 4rem;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    background: var(--white-color);
+    border-radius: 5px;
+    color: #666;
+    font-weight: 600;
+}

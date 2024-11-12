@@ -2,9 +2,9 @@ import React, { useEffect, useRef, useContext, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 
 import logo from "/img/cww_rosa_png.png"
-import "../css/Header.css"
-import Cart from './Cart';
-import CartContext from "./cart/CartContext";
+import "./Header-Footer.css"
+// import Cart from '../Cart/Cart';
+import CartContext from "../context/CartContext";
 const token = localStorage.getItem("token");
 
 const Header = () => {

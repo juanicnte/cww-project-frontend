@@ -3,8 +3,8 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { ItemCart } from "./ItemCart";
 import axios from "axios";
 import { initMercadoPago, Payment } from '@mercadopago/sdk-react';
-import CartContext from "./cart/CartContext";
-import '../css/App.css';
+import CartContext from "../context/CartContext";
+import "./cart.css"
 
 const Cart = () => {
   const [isLoading, setIsLoading] = useState(true); // Estado de carga inicializado en true

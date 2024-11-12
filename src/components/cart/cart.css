@@ -1,0 +1,142 @@
+.cart {
+    margin: 0 1rem;
+    padding: 8rem 0 7rem;
+}
+
+.cartVacio-article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cartVacio-article svg {
+    width: 60%;
+}
+
+.cartVacio-article p {
+    font-size: 28px;
+    text-align: center;
+    font-weight: 600;
+    color: var(--grey-color);
+}
+
+.seguirComprando-button-cartVacio {
+    width: 100%;
+    margin: auto;
+    background-color: var(--terciary-color);
+    color: var(--white-color);
+    height: 3rem;
+    font-size: 16px;
+    margin-top: 2rem;
+}
+
+.productsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.total p {
+    font: 18px;
+    color: var(--grey-color);
+    font-weight: 600;
+}
+
+
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+::-webkit-scrollbar:vertical {
+    width: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #797979;
+    border-radius: 20px;
+}
+
+.cartItem {
+    display: flex;
+    align-items: center;
+    height: 9rem;
+    padding: 10px 0;
+    border-bottom: 1px solid #DBDBDB;
+    position: relative;
+}
+
+.cartItem img {
+    height: 100%;
+    border-radius: 5px;
+    width: 30vw;
+}
+
+.dataContainer {
+    display: flex;
+    margin-left: 10px;
+    padding: 10px 0;
+    flex-direction: column;
+    gap: 5px;
+    height: 100%;
+}
+
+.dataContainer-item-category {
+    font-size: 14px;
+}
+
+.dataContainer-item-price {
+    font-size: 16px;
+    color: var(--strong-pink);
+}
+
+.cartItem-add-del {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    right: 25px;
+    border: 1px solid #7f7f7f;
+    max-width: 6rem;
+}
+
+.cartItem-add-del p {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.delete-cartProduct {
+    position: absolute;
+    width: 1.5rem;
+    top: 2rem;
+    right: 2rem;
+}
+
+.cartItem-add-del button {
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+    padding: 3px 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #222222;
+}
+
+.cartItem-add-del-plus {
+    width: 2rem;
+    border-right: 1px solid #7f7f7f;
+    height: 80%;
+}
+
+.cartItem-add-del-minus {
+    width: 2rem;
+    border-left: 1px solid #7f7f7f;
+    height: 80%;
+}

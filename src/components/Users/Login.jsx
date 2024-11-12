@@ -1,9 +1,9 @@
 import axios from "axios";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { trackEvent } from './trackPageView.jsx';
+import { trackEvent } from '../context/trackPageView.jsx';
 
-import '../css/App.css'
+import "./users.css"
 
 const Login = () => {
   const [inputs, setInputs] = useState({ correo: "", contraseña: "" });
@@ -22,6 +22,9 @@ const Login = () => {
 
   const togglePasswordVisibility = () => {
     setShowPassword(!showPassword);
+    setTimeout(() => {
+      document.getElementById('contraseña').focus(); // Vuelve a poner el foco en el campo de la contraseña
+    }, 0);
   };
 
 

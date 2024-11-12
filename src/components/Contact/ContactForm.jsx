@@ -1,6 +1,8 @@
 import React, { useRef, useState } from 'react';
 import emailjs from 'emailjs-com';
 import NotificationForm from './NotificacionForm';
+import "./contact.css"
+
 const ContactForm = () => {
     const form = useRef();
     const [messageSent, setMessageSent] = useState(false);

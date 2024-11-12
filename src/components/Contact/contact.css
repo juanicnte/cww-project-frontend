@@ -1,0 +1,117 @@
+
+.contactForm-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 1rem 5rem;
+    padding-top: 2rem;
+}
+
+.contactForm-title h4 {
+    font-size: 24px;
+    color: var(--grey-color);
+}
+
+.contactForm-title p {
+    font-size: 16px;
+    color: #666;
+    margin-top: 1rem;
+    line-height: 26px;
+}
+
+.contactForm-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+    margin: 0 2rem;
+    padding-bottom: 4rem;
+    border-bottom: 1px solid #6666662b;
+}
+
+.contactForm-input-container input {
+    width: 100%;
+    padding: 1rem 2.3rem;
+    font-size: 17px;
+    border-top: 2px solid #6666662b;
+    background-color: #66666617;
+}
+
+.contactForm-input-container {
+    position: relative;
+}
+
+.contactForm-input-container svg {
+    position: absolute;
+    width: 1.6rem;
+    height: 100%;
+    left: 2px;
+    color: #666;
+}
+
+.contactForm-input-container textarea {
+    width: 100%;
+    padding: 1rem 2rem;
+    font-size: 17px;
+    height: 3rem;
+    background-color: #66666617
+}
+
+.contactForm-form select {
+    border-top: 2px solid #6666662b;
+    font-size: 17px;
+    color: #666;
+    height: 3.5rem;
+    background-color: #66666617;
+}
+
+.contactForm-input-container-submit {
+    position: relative;
+}
+
+.contactForm-input-container-submit input {
+    width: 100%;
+    padding: 1rem 2.3rem;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    color: #eeeeee;
+    border-top: 2px solid #6666662b;
+    background-color: var(--terciary-color);
+}
+
+.contactForm-input-container-submit svg {
+    position: absolute;
+    width: 1.6rem;
+    height: 100%;
+    left: 40px;
+    color: #eeeeee;
+}
+
+.NotificationForm-container {
+    display: flex;
+    width: 70vw;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--terciary-color);
+    position: absolute;
+    right: 0;
+    top: 36vh;
+
+}
+
+.NotificationForm-container svg {
+    width: 5rem;
+    padding: 2px;
+    border: 2px solid #eeeeee;
+    border-radius: 5rem;
+    margin-left: 5px;
+    color: #eeeeee;
+}
+
+.NotificationForm-container p {
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #eeeeee;
+
+}

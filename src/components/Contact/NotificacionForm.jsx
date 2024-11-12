@@ -1,4 +1,4 @@
-import '../css/App.css'
+import "./contact.css"
 
 function NotificationForm() {
     return (

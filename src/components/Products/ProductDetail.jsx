@@ -1,6 +1,6 @@
 import React, { useContext, seState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import CartContext from "./cart/CartContext"
+import CartContext from "../context/CartContext"
 
 const ProductDetail = () => {
     const { id } = useParams(); // Obtén el ID del producto de la URL

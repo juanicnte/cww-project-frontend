@@ -1,8 +1,8 @@
-import '../css/App.css';
+import "./products.css"
 import { Link, useNavigate } from 'react-router-dom';
 
 // import productsData from '../data/Products.json';
-import CartContext from "./cart/CartContext"; // Importa CartContext
+import CartContext from "../context/CartContext"; // Importa CartContext
 import { useContext } from 'react';
 
 function Pricing() {

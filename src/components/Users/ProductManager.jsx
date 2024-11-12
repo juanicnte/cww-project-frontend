@@ -109,11 +109,12 @@ const ProductManager = () => {
   };
 
   return (
-    <div>
-      <h1>Gestor de Productos</h1>
-      <form onSubmit={editingProductId ? updateProduct : createProduct}>
+    <section className='adminManager-section'>
+      <h1>Creacion de Productos</h1>
+      <form className='adminManager-form' onSubmit={editingProductId ? updateProduct : createProduct}>
         <input
           type="text"
+          className='adminManager-input'
           placeholder="Nombre del producto"
           value={name}
           onChange={(e) => setName(e.target.value)}
@@ -121,6 +122,7 @@ const ProductManager = () => {
         />
         <input
           type="text"
+          className='adminManager-input'
           placeholder="URL de la imagen"
           value={img}
           onChange={(e) => setImg(e.target.value)}
@@ -128,6 +130,7 @@ const ProductManager = () => {
         />
         <input
           type="number"
+          className='adminManager-input'
           placeholder="Precio"
           value={price}
           onChange={(e) => setPrice(e.target.value)}
@@ -135,6 +138,7 @@ const ProductManager = () => {
         />
         <input
           type="text"
+          className='adminManager-input'
           placeholder="Categoría"
           value={category}
           onChange={(e) => setCategory(e.target.value)}
@@ -142,42 +146,54 @@ const ProductManager = () => {
         />
         <input
           type="text"
+          className='adminManager-input'
           placeholder="Descripción"
           value={description}
           onChange={(e) => setDescription(e.target.value)}
           required
         />
 
-        <h3>Características (features)</h3>
+        {/* <h3 className='adminManager-features-title'>Características (features)</h3> */}
         {features.map((feature, index) => (
-          <div key={index}>
+          <div key={index} className='add-feature-container'>
             <input
               type="text"
+              className='adminManager-input-features'
               placeholder="Característica"
               value={feature}
               onChange={(e) => handleFeatureChange(index, e.target.value)}
               required
             />
-            <button type="button" onClick={() => removeFeature(index)}>Eliminar</button>
+            <button className='adminManager-button-delete-feature' type="button" onClick={() => removeFeature(index)}>Eliminar</button>
           </div>
         ))}
-        <button type="button" onClick={addFeature}>Agregar Característica</button>
+        <button className='adminManager-input' type="button" onClick={addFeature}>Agregar Característica</button>
 
-        <button type="submit">{editingProductId ? 'Actualizar Producto' : 'Agregar Producto'}</button>
-        {editingProductId && <button type="button" onClick={resetForm}>Cancelar edición</button>}
+        <button className='adminManager-button' type="submit">{editingProductId ? 'Actualizar Producto' : 'Agregar Producto'}</button>
+        {editingProductId && <button className='adminManager-button' type="button" onClick={resetForm}>Cancelar edición</button>}
       </form>
 
-      <h2>Lista de Productos</h2>
-      <ul>
+      <h2 className='adminManager-listProducts-title'>Lista de Productos</h2>
+      <ul className='adminManager-listProducts-ul'>
         {products.map((product) => (
           <li key={product._id}>
-            {product.name} - ${product.price}
-            <button onClick={() => startEditingProduct(product)}>Editar</button>
-            <button onClick={() => deleteProduct(product._id)}>Eliminar</button>
+            <img src={product.img} alt="" />
+            <div className='product-details-admin'>
+              <p>
+                {product.name}
+              </p>
+              <p>
+                ${product.price}
+              </p>
+            </div>
+            <div className='buttons-edits-admin'>
+              <button onClick={() => startEditingProduct(product)}>Editar</button>
+              <button onClick={() => deleteProduct(product._id)}>Eliminar</button>
+            </div>
           </li>
         ))}
       </ul>
-    </div>
+    </section>
   );
 };
 

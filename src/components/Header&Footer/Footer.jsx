@@ -1,4 +1,4 @@
-import '../css/App.css'
+import "./Header-Footer.css"
 import logo from "/img/cww_rosa_png.png"
 import Fade from 'react-reveal/Fade';
 

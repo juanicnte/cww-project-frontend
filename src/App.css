@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  /* Sin subrayado */
+}
+
+a:hover {
+  text-decoration: underline;
+  /* Subrayado al pasar el mouse */
+}
+
+ul,
+ol {
+  list-style: none;
+  /* Elimina los puntos de las listas */
+}
+
+body {
+  background-color: #eeeeee;
+  font-family: 'Mukta', sans-serif;
+  overflow-x: hidden;
+}
+
+:root {
+  --main-color: #F67280;
+  --secondary-color: #111111;
+  --terciary-color: #F9A2AB;
+  --strong-pink: #F34255;
+  --grey-color: #2a2a2a;
+  --strong-black: #000000;
+  --white-color: #fff;
+  --font-size: 16px;
+}
+
+
+.spinner {
+  border: 3px solid #e2e2e2;
+  border-radius: 50%;
+  border-left-color: var(--main-color);
+  animation: spin 0.8s ease infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+.scrollToTop {
+  position: fixed;
+  right: 15px;
+  bottom: 5px;
+}
+
+.scrollToTop svg {
+  width: 3rem;
+  padding: 7px;
+  background-color: #6666;
+  border-radius: 10px;
+}

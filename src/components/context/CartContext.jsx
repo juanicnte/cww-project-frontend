@@ -1,7 +1,7 @@
 import { createContext, useEffect, useState } from "react";
 import axios from "axios";
 import { data } from "flickity";
-import { trackEvent } from '../trackPageView.jsx';
+import { trackEvent } from '../context/trackPageView.jsx';
 
 const CartContext = createContext();
 
